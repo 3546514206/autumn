@@ -1,4 +1,4 @@
-package edu.zjnu.autumn;
+package edu.zjnu.autumn.factory;
 
 /**
  * @description: todo
@@ -11,6 +11,9 @@ public class TestBean {
 
     public TestBean(String field) {
         this.field = field;
+    }
+
+    public TestBean() {
     }
 
     public String getField() {

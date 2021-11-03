@@ -1,5 +1,9 @@
 package edu.zjnu.autumn;
 
+import edu.zjnu.autumn.factory.BeansException;
+import edu.zjnu.autumn.factory.TestBean;
+import edu.zjnu.autumn.factory.config.BeanDefinition;
+import edu.zjnu.autumn.factory.support.DefaultListableBeanFactory;
 import org.junit.Test;
 
 /**
@@ -10,12 +14,13 @@ import org.junit.Test;
 public class BeanFactoryTest {
 
     @Test
-    public void test() {
-        BeanDefinition testBeanDefinition = new BeanDefinition();
-        testBeanDefinition.setBean(new TestBean("我是猪头三"));
-        BeanFactory beanFactory = new BeanFactory();
-        beanFactory.registerBeanDefinition("testBeanDefinition", testBeanDefinition);
-        TestBean testBean = (TestBean) beanFactory.getBean("testBeanDefinition");
-        System.out.println(testBean.getField());
+    public void test() throws BeansException {
+        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+
+        BeanDefinition bd = new BeanDefinition(TestBean.class);
+        factory.registryBeanDefinition("testBean",bd);
+
+        TestBean bean =(TestBean) factory.getBean("testBean");
+        System.out.println(bean);
     }
 }

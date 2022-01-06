@@ -12,9 +12,9 @@ public class TestBean {
     public TestBean(String field) {
         this.field = field;
     }
-//
-//    public TestBean() {
-//    }
+
+    public TestBean() {
+    }
 
     public String getField() {
         return field;

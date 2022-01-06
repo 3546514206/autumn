@@ -18,9 +18,9 @@ public class BeanFactoryTest {
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 
         BeanDefinition bd = new BeanDefinition(TestBean.class);
-        factory.registryBeanDefinition("testBean",bd);
+        factory.registryBeanDefinition("testBean", bd);
 
-        TestBean bean =(TestBean) factory.getBean("testBean");
+        TestBean bean = (TestBean) factory.getBean("testBean", "杨海波");
         System.out.println(bean.hashCode());
 
         TestBean bean1 = (TestBean) factory.getBean("testBean");

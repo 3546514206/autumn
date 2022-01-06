@@ -7,7 +7,7 @@ import edu.zjnu.autumn.factory.support.DefaultListableBeanFactory;
 import org.junit.Test;
 
 /**
- * @description: todo
+ * @description: 测试程序
  * @author: 杨海波
  * @date: 2021-11-05
  **/
@@ -21,6 +21,11 @@ public class BeanFactoryTest {
         factory.registryBeanDefinition("testBean",bd);
 
         TestBean bean =(TestBean) factory.getBean("testBean");
-        System.out.println(bean);
+        System.out.println(bean.hashCode());
+
+        TestBean bean1 = (TestBean) factory.getBean("testBean");
+        System.out.println(bean1.hashCode());
+
+        System.out.println(bean1.getField());
     }
 }

@@ -1,5 +1,6 @@
 package edu.zjnu.autumn.factory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,7 +10,22 @@ import java.util.List;
  **/
 public class PropertyValues {
 
-    private List<PropertyValue> propertyValueList;
+    private List<PropertyValue> propertyValueList = new ArrayList<>();
+
+    public void addPropertyValue(PropertyValue propertyValue) {
+        propertyValueList.add(propertyValue);
+    }
+
+    public PropertyValue getPropertyValue(String propertyName) {
+        for (PropertyValue propertyValue : propertyValueList) {
+            if (propertyValue.getName().equals(propertyName)) {
+                return propertyValue;
+            }
+        }
+
+        //调方注意NPE
+        return null;
+    }
 
     public List<PropertyValue> getPropertyValueList() {
         return propertyValueList;

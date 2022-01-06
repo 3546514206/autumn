@@ -1,7 +1,11 @@
 package edu.zjnu.autumn.factory.support;
 
+import cn.hutool.core.bean.BeanUtil;
 import edu.zjnu.autumn.factory.BeansException;
+import edu.zjnu.autumn.factory.PropertyValue;
+import edu.zjnu.autumn.factory.PropertyValues;
 import edu.zjnu.autumn.factory.config.BeanDefinition;
+import edu.zjnu.autumn.factory.config.BeanReference;
 
 import java.lang.reflect.Constructor;
 
@@ -15,15 +19,39 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
     private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();
 
     @Override
-    protected Object createBean(String beanName, BeanDefinition bd, Object... args) throws BeansException {
+    protected Object createBean(String beanName, BeanDefinition beanDefinition, Object... args) throws BeansException {
         Object bean;
 
-        bean = createBeanInstantiaton(bd, beanName, args);
+        bean = createBeanInstantiaton(beanDefinition, beanName, args);
+
+        applyPropertyValue(beanName, bean, beanDefinition);
 
         //实例化完成,调用父类方法加入单例容器中
         addSingletonBean(beanName, bean);
 
         return bean;
+    }
+
+    private void applyPropertyValue(String beanName, Object bean, BeanDefinition beanDefinition) throws BeansException {
+        try {
+            PropertyValues propertyValues = beanDefinition.getPropertyValues();
+
+            for (PropertyValue propertyValue : propertyValues.getPropertyValueList()) {
+                String name = propertyValue.getName();
+
+                Object value = propertyValue.getValue();
+                assert value != null;
+
+                if (value instanceof BeanReference) {
+                    BeanReference beanReference = (BeanReference) value;
+                    value = getBean(beanReference.getBeanName());
+                }
+
+                BeanUtil.setFieldValue(bean, name, value);
+            }
+        } catch (Exception e) {
+            throw new BeansException("error to apply property value for bean [" + beanName + "]");
+        }
     }
 
     private Object createBeanInstantiaton(BeanDefinition bd, String beanName, Object[] args) throws BeansException {

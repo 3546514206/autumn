@@ -1,7 +1,7 @@
 package edu.zjnu.autumn.factory;
 
 /**
- * @description: todo
+ * @description: BeansException
  * @author: 杨海波
  * @date: 2021-11-03
  **/

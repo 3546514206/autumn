@@ -1,7 +1,7 @@
 package edu.zjnu.autumn.factory.config;
 
 /**
- * @description: todo
+ * @description: BeanReference
  * @author: 杨海波
  * @date: 2022-01-06
  **/

@@ -1,7 +1,7 @@
 package edu.zjnu.autumn.factory;
 
 /**
- * @description: todo
+ * @description: PropertyValue
  * @author: 杨海波
  * @date: 2022-01-06
  **/
@@ -9,6 +9,8 @@ public class PropertyValue {
     private String name;
 
     private Object value;
+
+
 
     public String getName() {
         return name;

@@ -3,7 +3,7 @@ package edu.zjnu.autumn.factory;
 import java.util.List;
 
 /**
- * @description: todo
+ * @description: PropertyValues
  * @author: 杨海波
  * @date: 2022-01-06
  **/

@@ -3,7 +3,7 @@ package edu.zjnu.autumn.factory.support;
 import edu.zjnu.autumn.factory.config.BeanDefinition;
 
 /**
- * @description: todo
+ * @description: BeanDefinitionRegistry
  * @author: 杨海波
  * @date: 2021-11-03
  **/

@@ -6,7 +6,7 @@ import edu.zjnu.autumn.factory.config.SingletonBeanRegistry;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @description: todo
+ * @description: DefaultSingletonBeanRegistry
  * @author: 杨海波
  * @date: 2021-11-03
  **/

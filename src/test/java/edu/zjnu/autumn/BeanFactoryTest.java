@@ -4,6 +4,8 @@ import edu.zjnu.autumn.factory.BeansException;
 import edu.zjnu.autumn.factory.TestBean;
 import edu.zjnu.autumn.factory.config.BeanDefinition;
 import edu.zjnu.autumn.factory.support.DefaultListableBeanFactory;
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.NoOp;
 import org.junit.Test;
 
 /**
@@ -27,5 +29,20 @@ public class BeanFactoryTest {
         System.out.println(bean1.hashCode());
 
         System.out.println(bean1.getField());
+    }
+
+    @Test
+    public void cglibTest() {
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(TestBean.class);
+        enhancer.setCallback(new NoOp() {
+            @Override
+            public int hashCode() {
+                return super.hashCode();
+            }
+        });
+
+        Object o = enhancer.create(new Class[]{String.class}, new Object[]{"小傅哥"});
+        System.out.println(((TestBean) o).getField());
     }
 }

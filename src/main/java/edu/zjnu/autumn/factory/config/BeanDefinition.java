@@ -13,11 +13,11 @@ public class BeanDefinition {
         this.bean = bean;
     }
 
-    public Class getBean() {
+    public Class getBeanClass() {
         return bean;
     }
 
-    public void setBean(Class bean) {
+    public void setBeanClass(Class bean) {
         this.bean = bean;
     }
 }

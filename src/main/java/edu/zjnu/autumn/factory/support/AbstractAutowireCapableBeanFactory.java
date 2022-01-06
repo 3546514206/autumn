@@ -15,7 +15,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         Object bean = null;
 
         try {
-            bean = bd.getBean().newInstance();
+            bean = bd.getBeanClass().newInstance();
         } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }

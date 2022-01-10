@@ -1,16 +1,14 @@
 package edu.zjnu.autumn;
 
-import edu.zjnu.autumn.factory.BeansException;
-import edu.zjnu.autumn.factory.PropertyValue;
-import edu.zjnu.autumn.factory.PropertyValues;
-import edu.zjnu.autumn.factory.TestBean;
-import edu.zjnu.autumn.factory.config.BeanDefinition;
-import edu.zjnu.autumn.factory.support.DefaultListableBeanFactory;
+import edu.zjnu.autumn.beans.factory.BeansException;
+import edu.zjnu.autumn.beans.factory.PropertyValue;
+import edu.zjnu.autumn.beans.factory.PropertyValues;
+import edu.zjnu.autumn.beans.factory.TestBean;
+import edu.zjnu.autumn.beans.factory.config.BeanDefinition;
+import edu.zjnu.autumn.beans.factory.support.DefaultListableBeanFactory;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.NoOp;
 import org.junit.Test;
-
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @description: 测试程序

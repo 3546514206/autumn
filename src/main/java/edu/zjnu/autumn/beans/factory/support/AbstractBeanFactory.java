@@ -1,8 +1,8 @@
-package edu.zjnu.autumn.factory.support;
+package edu.zjnu.autumn.beans.factory.support;
 
-import edu.zjnu.autumn.factory.BeanFactory;
-import edu.zjnu.autumn.factory.BeansException;
-import edu.zjnu.autumn.factory.config.BeanDefinition;
+import edu.zjnu.autumn.beans.factory.BeanFactory;
+import edu.zjnu.autumn.beans.factory.BeansException;
+import edu.zjnu.autumn.beans.factory.config.BeanDefinition;
 
 /**
  * @description: 抽象bean工厂

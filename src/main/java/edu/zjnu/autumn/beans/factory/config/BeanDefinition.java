@@ -1,6 +1,6 @@
-package edu.zjnu.autumn.factory.config;
+package edu.zjnu.autumn.beans.factory.config;
 
-import edu.zjnu.autumn.factory.PropertyValues;
+import edu.zjnu.autumn.beans.factory.PropertyValues;
 
 /**
  * @description: Bean定义

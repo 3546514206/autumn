@@ -1,11 +1,11 @@
-package edu.zjnu.autumn.factory.support;
+package edu.zjnu.autumn.beans.factory.support;
 
 import cn.hutool.core.bean.BeanUtil;
-import edu.zjnu.autumn.factory.BeansException;
-import edu.zjnu.autumn.factory.PropertyValue;
-import edu.zjnu.autumn.factory.PropertyValues;
-import edu.zjnu.autumn.factory.config.BeanDefinition;
-import edu.zjnu.autumn.factory.config.BeanReference;
+import edu.zjnu.autumn.beans.factory.BeansException;
+import edu.zjnu.autumn.beans.factory.PropertyValue;
+import edu.zjnu.autumn.beans.factory.PropertyValues;
+import edu.zjnu.autumn.beans.factory.config.BeanDefinition;
+import edu.zjnu.autumn.beans.factory.config.BeanReference;
 
 import java.lang.reflect.Constructor;
 

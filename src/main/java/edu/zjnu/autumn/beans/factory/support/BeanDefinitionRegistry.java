@@ -1,6 +1,6 @@
-package edu.zjnu.autumn.factory.support;
+package edu.zjnu.autumn.beans.factory.support;
 
-import edu.zjnu.autumn.factory.config.BeanDefinition;
+import edu.zjnu.autumn.beans.factory.config.BeanDefinition;
 
 /**
  * @description: BeanDefinitionRegistry

@@ -1,4 +1,4 @@
-package edu.zjnu.autumn.factory.config;
+package edu.zjnu.autumn.beans.factory.config;
 
 /**
  * @description: SingletonBeanRegistry

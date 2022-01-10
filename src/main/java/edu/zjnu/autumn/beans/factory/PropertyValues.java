@@ -1,4 +1,4 @@
-package edu.zjnu.autumn.factory;
+package edu.zjnu.autumn.beans.factory;
 
 import java.util.ArrayList;
 import java.util.List;

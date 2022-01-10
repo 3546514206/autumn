@@ -1,7 +1,6 @@
-package edu.zjnu.autumn.factory.support;
+package edu.zjnu.autumn.beans.factory.support;
 
-import edu.zjnu.autumn.factory.config.BeanDefinition;
-import edu.zjnu.autumn.factory.config.SingletonBeanRegistry;
+import edu.zjnu.autumn.beans.factory.config.SingletonBeanRegistry;
 
 import java.util.concurrent.ConcurrentHashMap;
 

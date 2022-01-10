@@ -1,7 +1,7 @@
-package edu.zjnu.autumn.factory.support;
+package edu.zjnu.autumn.beans.factory.support;
 
-import edu.zjnu.autumn.factory.BeansException;
-import edu.zjnu.autumn.factory.config.BeanDefinition;
+import edu.zjnu.autumn.beans.factory.BeansException;
+import edu.zjnu.autumn.beans.factory.config.BeanDefinition;
 
 import java.lang.reflect.Constructor;
 

@@ -32,6 +32,6 @@ public class FileSystemResource implements Resource {
 
     @Override
     public InputStream getInputSteam() throws IOException {
-        return new FileInputStream(path);
+        return new FileInputStream(file);
     }
 }

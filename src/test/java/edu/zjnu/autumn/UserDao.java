@@ -15,7 +15,7 @@ public class UserDao {
     static {
         map.put("10001","大人");
         map.put("10002","小孩");
-        map.put("10003","全世界最好的小沈");
+        map.put("10003","全世界最好的");
     }
 
     public String queryUserName(String userId){

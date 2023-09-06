@@ -14,7 +14,6 @@ public class ClassPathResourceTest {
     public void test(){
         ClassPathResource resource = new ClassPathResource(null);
         System.out.println(resource);
-
     }
 
 }

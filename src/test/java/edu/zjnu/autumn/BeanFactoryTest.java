@@ -45,7 +45,7 @@ public class BeanFactoryTest {
             }
         });
 
-        Object o = enhancer.create(new Class[]{String.class}, new Object[]{"小傅哥"});
+        Object o = enhancer.create(new Class[]{String.class}, new Object[]{"杨海波"});
         System.out.println(((TestBean) o).getField());
     }
 

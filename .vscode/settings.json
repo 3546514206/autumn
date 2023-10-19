@@ -1,0 +1,9 @@
+{
+    "graalvm.home": "/Library/Java/GraalVM/graalvm-jdk-21.0.1+12.1/Contents/Home",
+    "graalvm.installations": [
+        "/Library/Java/GraalVM/graalvm-jdk-21.0.1+12.1/Contents/Home"
+    ],
+    "terminal.integrated.env.osx": {
+        "GRAALVM_HOME": "/Library/Java/GraalVM/graalvm-jdk-21.0.1+12.1/Contents/Home"
+    }
+}

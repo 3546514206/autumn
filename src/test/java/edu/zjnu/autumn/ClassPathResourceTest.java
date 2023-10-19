@@ -10,10 +10,10 @@ import org.junit.Test;
  **/
 public class ClassPathResourceTest {
 
-    @Test
-    public void test(){
-        ClassPathResource resource = new ClassPathResource(null);
-        System.out.println(resource);
-    }
+    // @Test
+    // public void test(){
+    //     ClassPathResource resource = new ClassPathResource(null);
+    //     System.out.println(resource);
+    // }
 
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.zjnu.autumn.ClassPathResourceTest" time="0.075" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/setsunayang/Documents/learning/autumn/target/test-classes:/Users/setsunayang/Documents/learning/autumn/target/classes:/Users/setsunayang/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/setsunayang/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/setsunayang/.m2/repository/cglib/cglib/3.2.4/cglib-3.2.4.jar:/Users/setsunayang/.m2/repository/org/ow2/asm/asm/5.1/asm-5.1.jar:/Users/setsunayang/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/setsunayang/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/setsunayang/.m2/repository/cn/hutool/hutool-all/5.7.12/hutool-all-5.7.12.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/setsunayang/Documents/learning/autumn/target/surefire/surefirebooter-20231019140019988_3.jar /Users/setsunayang/Documents/learning/autumn/target/surefire 2023-10-19T14-00-18_157-jvmRun1 surefire-20231019140019988_1tmp surefire_0-20231019140019988_2tmp"/>
+    <property name="surefire.test.class.path" value="/Users/setsunayang/Documents/learning/autumn/target/test-classes:/Users/setsunayang/Documents/learning/autumn/target/classes:/Users/setsunayang/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/setsunayang/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/setsunayang/.m2/repository/cglib/cglib/3.2.4/cglib-3.2.4.jar:/Users/setsunayang/.m2/repository/org/ow2/asm/asm/5.1/asm-5.1.jar:/Users/setsunayang/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/setsunayang/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/setsunayang/.m2/repository/cn/hutool/hutool-all/5.7.12/hutool-all-5.7.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/setsunayang"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/setsunayang/Documents/learning/autumn"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/setsunayang/Documents/learning/autumn/target/surefire/surefirebooter-20231019140019988_3.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="setsunayang"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/setsunayang/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/1b/z6cfyc852d3c2gktmtl1ymd80000gn/T/"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.dir" value="/Users/setsunayang/Documents/learning/autumn"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/setsunayang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.ext.dirs" value="/Users/setsunayang/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/JDK 8/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test" classname="edu.zjnu.autumn.ClassPathResourceTest" time="0.016">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at edu.zjnu.autumn.core.io.ClassPathResource.<init>(ClassPathResource.java:36)
+	at edu.zjnu.autumn.core.io.ClassPathResource.<init>(ClassPathResource.java:32)
+	at edu.zjnu.autumn.ClassPathResourceTest.test(ClassPathResourceTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+</testsuite>

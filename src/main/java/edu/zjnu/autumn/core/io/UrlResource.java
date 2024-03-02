@@ -1,7 +1,5 @@
 package edu.zjnu.autumn.core.io;
 
-import sun.jvm.hotspot.ui.tree.FieldTreeNodeAdapter;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
